@@ -25,7 +25,7 @@ Scope: Objects and types.
 Common Usage: Used in polymorphism for type checking.
 
 
-static keyword
+static 
 
 Purpose: Creates shared class-level members.
 
