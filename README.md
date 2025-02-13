@@ -21,3 +21,7 @@ Day10-(06-02-25): Gained hands on knowledge on creating objects and multiple obj
 Day11-(07-02-25): Learned basic java concepts about Inheritance. Hybrid, Multilevel and Single Inheritance. Also performed Multiple Inheritance using Interfaces.
 
 Day12-(10-02-25): Learned encapsulation, polymorphism, interface and abstract classses. Also perform problems using these concepts.
+
+Day13-(12-02-25):Implemented real life problems using singly, doubly and circular linked lists.
+
+Day14-(13-02-25):Learned and came up with algorithms to solve problems using HashMap, HashSet, Stacks and Queues, whilst learning about their basic operations. 
