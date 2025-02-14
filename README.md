@@ -25,3 +25,5 @@ Day12-(10-02-25): Learned encapsulation, polymorphism, interface and abstract cl
 Day13-(12-02-25):Implemented real life problems using singly, doubly and circular linked lists.
 
 Day14-(13-02-25):Learned and came up with algorithms to solve problems using HashMap, HashSet, Stacks and Queues, whilst learning about their basic operations. 
+
+Day15-(13-02-25):Learned and implemented array sorting algorithms as Bubble Sort, Merge Sort, Heap Sort, Quick Sort, Insertion Sort, Selection Sort, Counting Sort.
