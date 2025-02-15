@@ -1,0 +1,103 @@
+import java.util.*;
+public class EmployeeRecord{
+
+}
+public interface CRUD{
+void Add(Employee e);
+void Delete(int i);
+void Display();
+void Update(String s);
+void Update(int n);
+}
+class Employee{
+public static Scanner sc=new Scanner(System.in);
+private int ID;
+private String name;
+private int age;
+private String dept;
+private int salary;
+public Employee(int ID, String name, int age, String dept, int salary){
+this.name=name;
+this.age=age;
+this.dept=dept;
+this.ID=ID;
+this.salary=salary;
+}
+public int getID(){
+return ID;
+}
+public int getAge(){
+return age;
+}
+public void setAge(int age){
+this.age=age;
+}
+public int getSalary(){
+return salary;
+}
+public void setSalary(int salary){
+this.salary=salary;
+}
+public String getName(){
+return name;
+}
+public void setName(String name){
+this.name=name;
+}
+public String getDept(){
+return dept;
+}
+public void setDept(String dept){
+this.dept=dept;
+}
+}
+class EmployeeWork implements CRUD{
+static HashMap<Integer, Employee> hp=new HashMap<>();
+public void Add(Employee e){
+if(hp.containsKey(e.getID()){
+System.out.println("Employee ID already exists");
+return;
+}
+hp.put(e.getID(),e);
+}
+public void Delete(int ID){
+if(hp.containsKey(ID))
+hp.remove(ID);
+else
+System.out.println("ID does not exist");
+}
+public void update(int ID){
+System.out.println("Enter the entity to be updated: name, age, department, salary");
+String s=sc.next();
+if(s.equals("name")){
+System.out.println("Enter the name");
+String n=sc.next();
+hp.get(ID).setName(n);
+}
+else if(s.equals("age")){
+System.out.println("Enter the age");
+int a=sc.nextInt();
+hp.get(ID).setAge(a);
+}
+else if(s.equals("department")){
+System.out.println("Enter the Department");
+String d=sc.next();
+hp.get(ID).setDept(d);
+}
+else{
+System.out.println("Enter the salary");
+int sal=sc.nextInt();
+hp.get(ID).setSalary(sal);
+}
+}
+public void Display(){
+for(int i:hp.keySet()){
+System.out.println("Employee ID: "+i);
+System.out.println("Employee name: "+hp.get(i).getName());
+System.out.println("Employee age: "+hp.get(i).getAge());
+System.out.println("Employee salary: "+hp.get(i).getSalary());
+System.out.println("Employee department: "+hp.get(i).getDept());
+System.out.println();
+}
+}
+}
