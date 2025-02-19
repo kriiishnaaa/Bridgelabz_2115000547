@@ -27,3 +27,9 @@ Day13-(12-02-25):Implemented real life problems using singly, doubly and circula
 Day14-(13-02-25):Learned and came up with algorithms to solve problems using HashMap, HashSet, Stacks and Queues, whilst learning about their basic operations. 
 
 Day15-(13-02-25):Learned and implemented array sorting algorithms as Bubble Sort, Merge Sort, Heap Sort, Quick Sort, Insertion Sort, Selection Sort, Counting Sort.
+
+Day16-(15-02-25):Learned the usage of String Buffer, String Builder and InputStream and FileReader.
+
+Day17-(17-02-25):Used System.nanoTime() to compare the time complexities of various data structures in performing searching and sorting.
+
+Day18-(18-02-25):Implemented the basic concepts of Generics Classes, Generic Methods, Bounded Type Parameters and Wildcards.
